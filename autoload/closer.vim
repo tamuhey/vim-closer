@@ -115,7 +115,7 @@ function! s:get_closing(line)
   let i = -1
   let clo = ''
   while 1
-    let i = match(a:line, '[{}()\[\]]', i+1)
+    let i = match(a:line, '[{}()<>\[\]]', i+1)
     if i == -1 | break | endif
     let ch = a:line[i]
     if ch == '{'
