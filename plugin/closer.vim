@@ -18,7 +18,7 @@ augroup closer
 
   au FileType rust
     \ let b:closer = 1 |
-    \ let b:closer_flags = '([{<'
+    \ let b:closer_flags = '([{'
 
   au FileType php
     \ let b:closer = 1 |
